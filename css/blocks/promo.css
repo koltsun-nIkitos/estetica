@@ -1,0 +1,121 @@
+/* PROMO */
+
+.promo{
+    min-height: 100vh;
+    background-image: url('../../img/bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 15px;
+    color: var(--white-color);
+}
+
+.promo .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: inherit;
+    padding-bottom: 80px;
+}
+
+.promo__content{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.promo__content__title{
+    font-weight: 600;
+    font-size: var(--extra-large-size);
+    max-width: 880px;
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+
+.promo__content__title span{
+    font-size: var(--extra-large-size);
+    font-weight: 500;
+    color:var(--pink-color);
+    display: inline-block;
+}
+
+.promo__content__buttons{
+    display: flex;
+}
+
+.promo__content__buttons .nav-link:first-child{
+    margin-right: 35px;
+}
+
+.promo__footer{
+    display: flex;
+    justify-content: space-between;
+    min-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.promo__group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promo__group__title{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.promo__group__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promo__group__p{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+/* PROMO */
+
+/* PROMO CONTACTS */
+
+
+body:not(.index__page) .promo{
+    background-image: url('../../img/contacts/promo_bg.png');
+    background-color: var(--pink-color);
+    color: var(--dark-color);
+    min-height: 90vh;
+}
+
+body:not(.index__page) .header{
+    margin-bottom: 90px;
+}
+
+body:not(.index__page) .nav-link:not(.button-bg):not(.button-bg--transparent):not(.button-bg--dark){
+    color: var(--gray-color);
+}
+
+body:not(.index__page) .nav-link:not(.button-bg):not(.button-bg--transparent):not(.button-bg--dark) {
+    border-color: var(--gray-color);
+}
+
+body:not(.index__page) .nav-link.nav-link-active:not(.button-bg):not(.button-bg--transparent):not(.button-bg--dark) {
+    border-color: var(--dark-color);
+    color: var(--dark-color);
+}
+
+body:not(.index__page) .promo .container{
+    justify-content: start;
+}
+
+body:not(.index__page) .promo__content__title {
+    max-width: 1180px;
+}
+
+/* PROMO CONTACTS */

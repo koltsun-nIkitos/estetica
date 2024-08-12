@@ -1,0 +1,99 @@
+
+
+/* FOOTER */
+
+.footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__content{
+    padding-top: 68px;
+    padding-bottom: 68px;
+    background-color: #FEEBE5;
+}
+
+.footer__content .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__logo{
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 50%;
+    background-image: url('../../img/estetic_logo.jpg');
+}
+
+
+
+.footet__nav__link{
+    font-weight: bold;
+    /* margin-bottom: 10px; */
+    margin-right: 5px;
+    margin-left: 5px;
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.footer__contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__title{
+    font-size: var(--medium-size);
+    margin-bottom: 16px;
+}
+
+.footer__text{
+    max-width: 375px;
+    margin-bottom: 26px;
+    text-align: center;
+}
+
+.footer__socials{
+    display: flex;
+}
+
+.footer__social{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-size:cover;
+    background-position: center center;
+}
+
+.footer__social.vk-link{
+    background-image: url('../../img/icons/vk.png');
+}
+
+.footer__social.instagram-link{
+    background-image: url('../../img/icons/insta.png');
+}
+
+.footer__copyright{
+    background-color: #ECD0C7;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright a{
+    display: block;
+    color: var(--dark-color);
+}
+
+/* FOOTER */

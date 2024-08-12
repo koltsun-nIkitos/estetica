@@ -1,0 +1,122 @@
+body.contact__page .promo__content__title{
+    color: var(--dark-color);
+}
+
+.contacts__block{
+    background-color: #F6EBE7;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block{
+    max-width: 1050px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__logo{
+    background-image: url('../../img/estetic_logo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-width: 300px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.block__vertical__line{
+    background-color: var(--pink-color);
+    width: 40px;
+    height: 550px;
+    border-radius: 27px;
+}
+
+.contacts__links{
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.contact__link{
+    width: 140px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode:vertical-rl; 
+    transform: rotate(180deg);
+    background-color: #F7AC91;
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.contact__link:last-child{
+    background-color: var(--pink-color);
+}
+
+.contacts__map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.contacts__map iframe{
+    height: 100%;
+}
+
+@media (max-width: 1024px) {
+    .block{
+        justify-content: center;
+    }
+    .block__vertical__line{
+        margin-left: 30px;
+        margin-right: 30px;
+        height: 225px;
+        width: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .block{
+        flex-direction: column;
+    }
+    .contact__logo{
+        width: 150px;
+        height: 150px;
+    }
+    .block__vertical__line{
+        transform: rotate(90deg);
+        margin-top: -50px;
+        margin-bottom: -50px;
+    }
+}
+
+@media (max-width: 376px) {
+    body.contact__page .footer__title{
+        text-align: center;
+    }
+}
+
+@media (max-width: 321px) {
+    body:not(.index__page) header .button-bg--dark {
+        max-width: 110px;
+    }
+    body:not(.index__page) .promo .container{
+        padding-bottom: 20px;
+    }
+    body:not(.index__page) .header{
+        margin-bottom: 110px;
+    }
+}

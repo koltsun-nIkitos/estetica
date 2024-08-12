@@ -1,0 +1,43 @@
+@import url('./style.css');
+
+@import url('./navs.css');
+
+@import url('./buttons.css');
+
+@import url('./fonts.css');
+
+/* BLOCKS INDEX*/
+@import url('./blocks/header.css');
+
+@import url('./blocks/promo.css');
+
+@import url('./blocks/about.css');
+
+@import url('./blocks/services.css');
+
+@import url('./blocks/shop.css');
+
+@import url('./blocks/gallery.css');
+
+@import url('./blocks/footer.css');
+/* BLOCKS INDEX*/
+
+@import url('./adaptive.css');
+
+@import url('./swiper.css');
+
+/* PAGES */
+
+@import url('./pages/contacts.css');
+
+@import url('./pages/blog.css');
+
+@import url('./pages/shop.css');
+
+@import url('./pages/about.css');
+
+@import url('./pages/services.css');
+
+@import url('./pages/booking.css');
+
+/* PAGES */

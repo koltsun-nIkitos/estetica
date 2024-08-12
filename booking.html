@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="./js/swiperLib.js"></script>
+    <script defer src="./js/swiper.js"></script>
+    <script defer src="./js/booking.js"></script>
+    <script defer src="./js/calender.js"></script>
+    
+    <script defer src="./js/main.js"></script>
+    <!-- <script defer src="./js/scrolling.js"></script> -->
+    <title>Эстетика - Запись</title>
+</head>
+<body class="booking__page">
+    <section class="promo" id="promo">
+        <div class="container">
+            <header class="header">
+                <a href="./index.html" class="logo"></a>
+
+                <nav class="nav-menu">
+                    <a href="./index.html" class="nav-link not-scroll">
+                        Главная
+                    </a>
+                    <a href="./index.html#about" class="nav-link">
+                        О нас
+                    </a>
+                    <a href="./index.html#services" class="nav-link">
+                        Услуги
+                    </a>
+                    <a href="./index.html#shop" class="nav-link">
+                        Магазин
+                    </a>
+                    <a href="./index.html#blog" class="nav-link">
+                        Блог
+                    </a>
+                    <a href="./index.html#gallery" class="nav-link">
+                        Галерея
+                    </a>
+                    <a href="./contacts.html" class="nav-link not-scroll">
+                        Контакты
+                    </a>
+                </nav>
+
+                <a href="#" class="nav-link button-bg--dark">
+                    Запись
+                </a>
+
+                <nav class="burger-menu">
+                    <a href="./index.html" class="nav-link not-scroll">
+                        Главная
+                    </a>
+                    <a href="./index.html#about" class="nav-link">
+                        О нас
+                    </a>
+                    <a href="./index.html#services" class="nav-link">
+                        Услуги
+                    </a>
+                    <a href="./index.html#shop" class="nav-link">
+                        Магазин
+                    </a>
+                    <a href="./index.html#blog" class="nav-link">
+                        Блог
+                    </a>
+                    <a href="./index.html#gallery" class="nav-link">
+                        Галерея
+                    </a>
+                    <a href="./contacts.html" class="nav-link not-scroll">
+                        Контакты
+                    </a>
+                </nav>
+
+                <a href="" class="button-close"></a>
+            </header>
+
+            <div class="promo__content">
+                <h1 class="promo__content__title">
+                    Записаться на встречу
+                </h1>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <section class="booking">
+        <div class="container">
+            <form action="." class="booking__form">
+                <div class="booking__column">
+                    <div data-booking="booking1" class="booking__button booking__button--active">Выбор услуги</div>
+                    <div data-booking="booking2" class="booking__button">Дата</div>
+                    <div data-booking="booking3" class="booking__button">Время</div>
+                    <div data-booking="booking4" class="booking__button">Ваша информация</div>
+                    <div data-booking="booking5" class="booking__button">Завершено</div>
+                </div>
+
+                <div class="booking__section booking__section--active" id="booking1">
+                    <div class="booking__group">
+                        <label for="form_master">Мастер <span>*</span></label>
+                        <select required name="master" id="form_master">
+                            <option value="not_select">
+                                <p class="option__title">Выберите мастера</p>
+                            </option>
+                            <option value="master1">
+                                <p class="option__title">Колцун Татьяна</p>
+                                <p class="option__price"></p>
+                            </option>
+                            <option value="master2">
+                                <p class="option__title">Евдокимова Светлана</p>
+                                <p class="option__price"></p>
+                            </option>
+                        </select>
+    
+                        <label for="form_category">Категория <span>*</span></label>
+                        <select required name="category" disabled id="form_category">
+                            <option value="not_select">
+                                <p class="option__title">Выберите категорию</p>
+                            </option>
+                            <option class="category__item" value="category1" data-master="master1">
+                                <p class="option__title">Стрижка</p>
+                                <p class="option__price">от 1500 ₽</p>
+                            </option>
+                            <option class="category__item" value="category2" data-master="master2">
+                                <p class="option__title">Макияж</p>
+                                <p class="option__price">от 1500 ₽</p>
+                            </option>
+                            <option class="category__item" value="category3" data-master="master1">
+                                <p class="option__title">Маникюр/Педикюр</p>
+                                <p class="option__price">от 1500 ₽</p>
+                            </option>
+                            <option class="category__item" value="category4" data-master="master2">
+                                <p class="option__title">Уход за кожей</p>
+                                <p class="option__price">от 1500 ₽</p>
+                            </option>
+                            <option class="category__item" value="category5" data-master="master2">
+                                <p class="option__title">Лицо</p>
+                                <p class="option__price">от 1500 ₽</p>
+                            </option>
+                        </select>
+    
+                        <label for="form_service">Услуга <span>*</span></label>
+                        <select required name="service" disabled id="form_service" >
+                            <option class="service__item" data-category="category0" value="not_select">
+                                <p class="option__title">Выберите услугу</p>
+                            </option>
+                            <option class="service__item" data-category="category1" value="service1">
+                                <p class="option__title">Стрижка1</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                            <option class="service__item" data-category="category1" value="service2" >
+                                <p class="option__title">Стрижка2</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                            <option class="service__item" data-category="category1" value="service3">
+                                <p class="option__title">Стрижка3</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                            <option class="service__item" data-category="category1" value="service4">
+                                <p class="option__title">Стрижка4</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+            
+                            <option class="service__item" data-category="category2" value="service5">
+                                <p class="option__title">Макияж1</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                            <option class="service__item" data-category="category2" value="service6">
+                                <p class="option__title">Макияж2</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                            <option class="service__item" data-category="category2" value="service7">
+                                <p class="option__title">Макияж3</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                            <option class="service__item" data-category="category2" value="service8">
+                                <p class="option__title">Макияж4</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+
+                            <option class="service__item" data-category="category3" value="service9" >
+                                <p class="option__title">Маникюр/Педикюр1</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                            <option class="service__item" data-category="category3" value="service10">
+                                <p class="option__title">Маникюр/Педикюр2</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                            <option class="service__item" data-category="category3" value="service11">
+                                <p class="option__title">Маникюр/Педикюр3</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                            <option class="service__item" data-category="category3" value="service12">
+                                <p class="option__title">Маникюр/Педикюр4</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                    
+                            <option class="service__item" data-category="category4" value="service13">
+                                <p class="option__title">Уход за кожей1</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                            <option class="service__item" data-category="category4" value="service14">
+                                <p class="option__title">Уход за кожей2</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                            <option class="service__item" data-category="category4" value="service15">
+                                <p class="option__title">Уход за кожей3</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                            <option class="service__item" data-category="category4" value="service16">
+                                <p class="option__title">Уход за кожей4</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+
+                            <option class="service__item" data-category="category5" value="service17">
+                                <p class="option__title">Лицо1</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                            <option class="service__item" data-category="category5" value="service18">
+                                <p class="option__title">Лицо2</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                            <option class="service__item" data-category="category5" value="service19">
+                                <p class="option__title">Лицо3</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                            <option class="service__item" data-category="category5" value="service20">
+                                <p class="option__title">Лицо4</p>
+                                <p class="option__price">1500 ₽</p>
+                            </option>
+                        </select>
+                    </div>
+    
+                    <div class="booking__buttons">
+                        <button data-booking="booking2" disabled class="booking__button__next booking__button--disabled">Далее</button>
+                    </div>
+                </div>
+    
+                <div class="booking__section" id="booking2">
+                    <div class="booking__group">
+                        <label>Дата <span>*</span></label>
+                        
+                        <div class="calender" id="calender">
+                            <div class="calender__header">
+                                <p class="calender__mounth">
+
+                                </p>
+                                <p class="calendar__year">
+
+                                </p>
+                            </div>
+                            <div class="calender__wrapper" id="calender__wrapper">
+
+                            </div>
+                            <input readonly required type="date" name="date" id="celender__date">
+                        </div>
+                    </div>
+    
+                    <div class="booking__buttons">
+                        <button data-booking="booking3" disabled class="booking__button__next booking__button--disabled">Далее</button>
+                    </div>
+                </div>
+
+                <div class="booking__section" id="booking3">
+                    <div class="booking__group">
+                        <label>Время <span>*</span></label>
+                        
+                        <div class="times">
+                            <div class="time" data-availible="true">9:00 - 10:00</div>
+                            <div class="time" data-availible="true">10:00 - 11:00</div>
+                            <div class="time" data-availible="true">11:00 - 12:00</div>
+                            <div class="time" data-availible="false">12:00 - 13:00</div>
+                            <div class="time" data-availible="true">13:00 - 14:00</div>
+                            <div class="time" data-availible="false">14:00 - 15:00</div>
+                            <div class="time" data-availible="true">15:00 - 16:00</div>
+                            <div class="time" data-availible="true">16:00 - 17:00</div>
+                            <div class="time" data-availible="true">17:00 - 18:00</div>
+                        </div>
+
+                        <input type="time" name="form__time" id="form__time" readonly required>
+
+                        <div class="booking__buttons">
+                            <button data-booking="booking4" disabled class="booking__button__next booking__button--disabled">Далее</button>
+                        </div>
+                    </div>
+    
+                </div>
+
+                <div class="booking__section" id="booking4">
+                    <div class="booking__group">
+                        <label>Ваша информация <span>*</span></label>
+                        <input type="text" name="form__name" id="form__name" placeholder="Имя" required>
+                        <p class="info__tel_p">Введите корректный номер телефона, для подтверждения записи мы Вам позвоним. 
+                            <br>
+                            Запись без нашего звонка Вам считается недействительной.
+                        </p>
+                        <input type="tel" name="form__tel" id="form__tel" placeholder="Номер телефона" required>
+                    </div>
+                    <div class="booking__buttons">
+                        <button data-booking="booking5" disabled class="booking__button__next booking__button--disabled">Отправить</button>
+                    </div>
+                </div>
+
+                <div class="booking__section" id="booking5">
+                    <div class="booking__group finished__book">
+                        <img src="./img/booking/finished__booking.png" alt="finished booking img" class="finished__book__img">
+                        <h3 class="finished__booking__title">
+                            ВАША ВСТРЕЧА ЗАБРОНИРОВАНА
+                        </h3>
+                        <p class="finished__booking__text">
+                            Мы Вам позвоним, для подтверждения записи. <br>
+                            Пожалуйста, приходите вовремя, мы будем вас ждать.
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>  
+    </section>
+    
+    <footer class="footer" id="footer">
+        <div class="footer__content">
+            <div class="container">
+                <a href="" class="footer__logo"></a>
+                <nav class="footer__nav">
+                    <a href="./index.html" class="footet__nav__link not-scroll">Главная</a>
+                    <a href="./index.html#about" class="footet__nav__link">О нас</a>
+                    <a href="./index.html#services" class="footet__nav__link">Услуги</a>
+                    <a href="./index.html#shop" class="footet__nav__link">Магазин</a>
+                    <a href="./index.html#blog" class="footet__nav__link">Блог</a>
+                    <a href="./index.html#gallery" class="footet__nav__link">Галерея</a>
+                    <a href="./contacts.html" class="footet__nav__link not-scroll">Контакты</a>
+                    <a href="" class="footet__nav__link not-scroll">Запись</a>
+                </nav>
+                <div class="footer__contacts">
+                    <h2 class="footer__title">
+                        Связаться с нами
+                    </h2>
+                    <p class="footer__text">
+                        Не пропустите уведомления, следите за нами, чтобы быть в курсе последних новостей
+                    </p>
+                    <div class="footer__socials">
+                        <a href="" class="footer__social vk-link"></a>
+                        <a href="" class="footer__social instagram-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__copyright">
+            <div class="container">
+                <p class="copyright">
+                    2024 Этетика. Все права защищены. 
+                    <a href="#">Сделано с ❤️</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

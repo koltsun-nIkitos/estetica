@@ -1,0 +1,129 @@
+.services__page .promo__content .section-text{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.services__page .services{
+    transition: background-color 1s;
+}
+
+.services__page .services--active{
+    background-color: var(--pink-color);
+}
+
+.services__page .services .container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.services__page .column__service{
+    margin-right: 140px;
+}
+
+.services__page .services-cards{
+    flex-direction: column;
+}
+
+.services__page .services-cards .card{
+    text-decoration: none;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.services__page .services-cards .card--active{
+    border: 4px dotted var(--pink-color);
+}
+
+.services--active .services-cards .card--active{
+    border: 4px dotted var(--white-color);
+}
+
+.services__page .service__wrapper .service__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#service1, #service2, #service3, #service4, #service5{
+    display: none;
+}
+
+.service__content--active{
+    display: block !important;
+}
+
+.service__content .service__group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services__page .service__header .section-title{
+    margin-bottom: 40px;
+}
+
+.services__page  .service__header .section-text{
+    margin-bottom: 140px;
+    max-width: 610px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.services__page .service__wrapper .service__card{
+    width: 45%;
+    margin-bottom: 50px;
+}
+
+.services__page .service__wrapper .service__card__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.services__page .service__group .nav-link{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+@media (max-width: 1024px) {
+    .services{
+        padding-top: 60px;
+    }
+    .services__page .column__service {
+        margin-right: 50px;
+    }
+    .services__page .service__header .section-text {
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services__page .service__wrapper .service__card {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 426px) {
+    .services__page .promo__content__title {
+        margin-bottom: 40px;
+    }
+    .services__page .promo__content .section-text {
+        font-size: 20px;
+    }
+    .services__page .services .container {
+        flex-direction: column;
+    }
+    .services__page .column__service {
+        margin-right: 0px;
+    }
+    .services__page .services-cards {
+        flex-direction: row;
+    }
+}

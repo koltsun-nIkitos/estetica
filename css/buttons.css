@@ -1,0 +1,83 @@
+/* BUTTONS */
+
+.button-bg, .button-bg--transparent, .button-bg--dark{
+    width: 250px;
+    height: 52px;
+    background-color: var(--navy-blue);
+    padding-top: 20px;
+    border-radius: 8px;
+    color: var(--white-color);
+    font-size: var(--small-size);
+    text-align: center;
+    transition: all 0.5s;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.button-bg{
+    box-shadow: 2px 2px 25px var(--navy-blue);
+    border: 2px solid var(--white-color);
+}
+
+.button-bg:hover{
+    background-color: transparent;
+    color: var(--pink-color);
+    border: 2px solid var(--pink-color);
+    box-shadow: 2px 2px 50px var(--pink-color);
+}
+
+.button-bg--transparent{
+    background-color: transparent;
+    border: 2px solid var(--pink-color);
+    color: var(--pink-color);
+    box-shadow: 2px 2px 25px var(--pink-color);
+    transition: all 0.5s;
+}
+
+.button-bg--transparent:hover{
+    background-color: var(--navy-blue);
+    color: var(--white-color);
+    border-color:var(--white-color);
+    box-shadow: 2px 2px 50px var(--navy-blue);
+}
+
+.button-bg--dark{
+    background-color: var(--navy-blue);
+    box-shadow: 2px 2px 25px var(--navy-blue);
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+}
+
+.button-bg--dark:hover{
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    box-shadow: 2px 2px 50px var(--dark-color);
+}
+
+.blog__card .nav-link, 
+.gallery .nav-link, 
+.shop .nav-link{
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    border-color: var(--white-color);
+    box-shadow: 2px 2px 25px var(--dark-color);
+}
+
+.blog__card .nav-link:hover, 
+.gallery .nav-link:hover, 
+.shop .nav-link:hover{
+    background-color: #18c5c4;
+    color: var(--white-color);
+    font-weight: bold;
+    box-shadow: 2px 2px 50px #18c5c4;
+}
+
+
+.shop .button-bg--dark, .blog .button-bg--dark, 
+.blog .button-bg--transparent{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+/* BUTTONS */

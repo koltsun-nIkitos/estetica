@@ -1,0 +1,19 @@
+body.blog__page .blog__cards{
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    max-width: none;
+}
+
+
+body.blog__page .category.new .new__group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body.blog__page .category.new .new__group .blog__card{
+    display: flex;
+    flex-direction: row;
+}

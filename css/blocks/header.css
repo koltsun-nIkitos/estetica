@@ -1,0 +1,64 @@
+/* HEADER */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    background-image: url('../../img/estetic_logo.jpg');
+    width: 80px;
+    height: 80px;
+    background-position: center center;
+    background-size: 200%;
+    display: block;
+    border-radius: 50%;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.burger-menu{
+    display: none;
+}
+
+.button-close{
+    display: none;
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('../../img/icons/menu.svg');
+}
+
+.button-close--active{
+    background-image: url('../../img/icons/close.svg');
+    width: 64px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.body--fixed{
+    overflow-y: hidden;
+}
+
+body:not(.index__page) .burger-menu .nav-link{
+    color: var(--gray-color) !important;
+}
+
+body:not(.index__page) .burger-menu .nav-link.nav-link-active{
+    color: var(--white-color) !important;
+    border-color: var(--white-color) !important;
+}
+
+body:not(.index__page) header .button-bg--dark {
+    max-width: 190px;
+}
+
+/* HEADER */

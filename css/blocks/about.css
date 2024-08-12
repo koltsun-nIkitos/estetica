@@ -1,0 +1,23 @@
+/* ABOUT */
+
+.about{
+    background-color: #FDE4DB;
+}
+
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 160px;
+    padding-top: 70px;
+}
+
+.about .section__text{
+    margin-bottom: 50px;
+}
+
+.about__img{
+    max-width: 550px;
+}
+
+/* ABOUT */
